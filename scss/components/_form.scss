@@ -1,0 +1,124 @@
+.form {
+    margin: auto;
+    padding: 20px 15px;
+
+
+    .form__heading {
+        color: $primary-content-color;
+    }
+
+    .form__field-wrapper {
+        margin-bottom: 20px;
+
+        .form__field-label {
+            display: flex;
+            line-height: 30px;
+            margin-bottom: 5px;
+            color: $primary-content-color;
+            font-size: $font-size__default;
+        }
+
+        .form__field-input {
+            @extend %border--default;
+            @extend %font-brand--regular;
+            position: relative;
+            width: 100%;
+            height: 44px;
+            padding: 10px;
+            font-size: $font-size__default;
+            border-radius: 5px;
+            box-sizing: border-box;
+            -webkit-appearance: none;
+
+            @media screen and (max-width: 576px) {
+                font-size: 18px;
+            }
+
+            &:active {
+                background-color: $active-input;
+            }
+
+            &:focus {
+                background-color: $active-input;
+            }
+
+            // fix input size on larger than mobile
+            @media screen and (min-width: 576px) {
+                max-width: 390px;
+            }
+
+        }
+
+        .form__field-input--pin {
+            width: 93px;
+        }
+
+        .form__field-input--dropdown {
+            background-color: $primary-background;
+        }
+
+        .form__field-checkbox {
+            opacity: 0;
+
+            & + label:before {
+                top: 0px;
+                left: 0px;
+                display: block;
+                width: 22px;
+                height: 22px;
+                margin-right: 15px;
+                content: '';
+                background: $primary-white;
+                border: $border-width__default solid $primary-content-color;
+                box-sizing: border-box;
+                border-radius: 3px;
+            }
+
+            &:hover + label:before {
+                border: solid 4px $primary-content-color;
+            }
+
+            &:focus + label:before {
+                background-color: $active-input;
+                border: solid 4px $primary-content-color;
+            }
+
+            &:checked + label:before {
+                background-color: $secondary-content-color;
+                background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjIuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyMS4zIDE2IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyMS4zIDE2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU+CjxnIGlkPSJQYWdlLTEiPgoJPGcgaWQ9Ikljb25zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtOTIuMDAwMDAwLCAtMjM3LjAwMDAwMCkiPgoJCTxnIGlkPSJUaWNrIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5Mi4wMDAwMDAsIDIzNy4wMDAwMDApIj4KCQkJPHBhdGggaWQ9IlNoYXBlIiBjbGFzcz0ic3QwIiBkPSJNOC4xLDE1LjhjLTAuMywwLjMtMC44LDAuMy0xLjEsMEwwLjIsOS4zYy0wLjMtMC4zLTAuMy0wLjgsMC0xLjFsMi4yLTIuMWMwLjMtMC4zLDAuOC0wLjMsMS4xLDAKCQkJCUw3LDkuNWMwLjMsMC4zLDAuOCwwLjMsMS4xLDBsOS43LTkuM2MwLjMtMC4zLDAuOC0wLjMsMS4xLDBsMi4yLDIuMWMwLjMsMC4zLDAuMywwLjgsMCwxLjFMOC4xLDE1LjhMOC4xLDE1LjhMOC4xLDE1Ljh6Ii8+CgkJPC9nPgoJPC9nPgo8L2c+Cjwvc3ZnPgo=");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 80%;
+            }
+
+        }
+
+        .form__field-checkbox--label {
+            color: $secondary-grey;
+            line-height: 23px;
+        }
+
+        .form__field-input--error {
+            border: solid $border-width__default $primary-red;
+
+            &::placeholder {
+                color: $primary-red;
+            }
+
+        }
+
+    }
+
+}
+
+.otp-verification {
+    margin: 4em 0;
+    padding:0;
+}
+
+input::-webkit-credentials-auto-fill-button {
+    position: absolute;
+    right: 0;
+    visibility: hidden;
+    pointer-events: none;
+}

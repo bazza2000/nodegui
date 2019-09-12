@@ -1,0 +1,101 @@
+// Submit buttons, next, prev stylings etc
+
+%btn {
+	@extend %font-brand--bold;
+	width: 100%;
+	height: 44px;
+	margin: 15px 0;
+	margin: 15px auto;
+	font-size: $font-size__default;
+	outline: none;
+	text-align: center;
+	border-radius: $border-radius__btn;
+	overflow: visible;
+	cursor: pointer;
+	// box-shadow: 0 3px 0 $btn-box-shadow;
+	max-width: 390px;
+
+	@media screen and (max-width: 576px) {
+		width: 100%;
+		font-size: 18px;
+	}
+
+}
+
+%btn--next {
+	border: 2px solid $primary-btn;
+	background-color: $primary-btn;
+	color: $primary-white;
+
+    &:hover {
+		border: 2px solid $secondary-btn;
+		background-color: $secondary-btn;
+	}
+	
+	&:focus {
+        border: 2px solid $secondary-btn;
+		background-color: $secondary-btn;
+    }
+
+}
+
+%btn--other {
+	border: $border-width__default solid $link-color;
+	background-color: $primary-white;
+	color: $link-color;
+
+    &:hover {
+		border: $border-width__default solid $border-btn--other;
+		background-color: $background-btn--other;
+		color: $text-btn--other;
+	}
+	
+	&:focus {
+		border: $border-width__default solid $border-btn--other;
+		background-color: $active-secondary-btn;
+		color: $text-btn--other;
+	}
+
+}
+
+%btn--blocked {
+	border: 2px solid $primary-grey;
+	background-color: $primary-grey;
+	color: $secondary-grey;
+}
+
+.button__submit-btn-wrapper {
+	margin-bottom: 20px;
+}
+
+.button__submit-btn--next {
+	@extend %btn,
+	%btn--next;
+}
+
+.button__submit-btn--blocked {
+	@extend %btn,
+	%btn--blocked;
+}
+
+.button__submit-btn--other {
+	@extend %btn,
+	%btn--other;
+}
+
+.button__manage-device--width {
+	@media screen and (max-width: 576px) {
+		width: 80%;
+		margin:0 37px;
+	}
+}
+
+.button__toggle {
+	@extend %font-brand--regular;
+	border:none;
+	background: transparent;
+	margin-top: 9px;
+	// line-height: 38px;
+	
+}
+

@@ -1,0 +1,153 @@
+//styling for headings 
+
+%h {
+	margin: 0px; 
+	color: $primary-content-color;
+}
+
+h1 {
+	@extend %h;
+	font-size: 36px;
+
+	@media screen and (max-width: 576px) {
+		font-size: $h1-mobile-font-size;
+	}
+
+}
+
+h2 {
+	@extend %h;
+	font-size: 21px;
+	margin-bottom: 0.7em;
+
+	@media screen and (max-width: 576px) {
+		font-size: 18px;
+	}
+}
+
+h3 {
+	@extend %h;
+	font-size: 34px;
+}
+
+h4 {
+	@extend %h;
+	font-size: 24px;
+}
+
+h5 {
+	@extend %h;
+	font-size: 18px;
+}
+
+h6 {
+	@extend %h;
+	font-size: 12px;
+}
+
+p, 
+label {
+	margin: 5px 0px;
+	padding: 0px;
+	line-height: 24px;
+    font-size: 21px;
+	color: $secondary-grey;
+	
+	@media screen and (max-width: 576px) {
+		font-size: 18px;
+	}
+
+	a {
+		color: $link-color;
+
+		&:hover {
+			color: $active-link-color;
+		}
+		
+	}
+
+}
+
+ol {
+	margin: 21px;
+	padding: 0px;
+	font-size: 21px;
+		li {
+			margin-top: 1em;
+		}
+}
+
+.line__text-push {
+	width: 68%;
+}
+
+//image inside 'div' tags
+.mobile_img {
+	margin: 0 0 2em 1em;
+}
+
+// images inside 'a' tags
+a {
+	&:focus > img {
+		border: solid 2px $primary-content-color;
+	}
+}
+
+.title-block__fscs-logo {
+	 width: 80px;
+	 height: 80px;
+	 @media screen and (max-width: 576px) {
+	  width: 53px;
+	  height: 53px;
+	}
+}
+
+/* Mobile media queries */
+@media only screen and (min-width : 320px) and (max-width : 360px) {
+
+	h1 {
+		  width: 290px;
+	}
+
+	h2, 
+	h3 {
+		font-size: 25px;
+	}
+
+	p {
+		font-size: 18px;
+	}
+	ol {
+		font-size: 18px;
+		li {
+			margin-top: 0.9em;
+		}
+	}
+	.line__text-push {
+		width: 100%;
+	}
+}
+@media only screen and (min-width : 361px) and (max-width : 414px) {
+
+	h1 {
+		width: 344px;
+	}
+
+	h2, 
+	h3 {
+		font-size: 25px;
+	}
+
+	p {
+		font-size: 18px;
+	}
+	ol {
+		font-size: 18px;
+		li {
+			margin-top: 0.9em;
+		}
+	}
+	.line__text-push {
+		width: 100%;
+	}
+}

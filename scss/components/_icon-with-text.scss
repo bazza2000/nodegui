@@ -1,0 +1,20 @@
+.icon-with-text {
+    position: relative;
+    margin: auto;
+    padding: 20px 0px 15px;
+
+    .icon-with-text__title {
+        font-weight: bold;
+    }
+
+    .icon-with-text__btn {
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .icon-with-text__img {
+        max-width: 100%;
+        min-width: 52px;
+    }
+
+}

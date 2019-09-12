@@ -1,0 +1,19 @@
+.verify-code {
+    max-width: 390px;
+    
+    .verify-code__spacer {
+        width: 5%;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .form__field-input {
+
+        &.verify-code__input {
+            width: 47.5%;
+            text-align: center;
+        }
+
+    }
+
+}

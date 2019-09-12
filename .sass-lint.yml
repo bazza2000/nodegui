@@ -1,0 +1,70 @@
+# Linter Options
+options:
+  # Don't merge default rules
+  merge-default-rules: false
+  # Set the formatter to 'html'
+  formatter: html
+  # Raise an error if more than 50 warnings are generated
+  max-warnings: 50
+# File Options
+files:
+  include:
+    - 'scss/*.scss'
+    - 'scss/base/*.scss'
+    - 'scss/components/*.scss'
+
+# Rule Configuration
+rules:
+  bem-depth:
+  - 2
+  - max-depth: 1
+  single-line-per-selector: 2
+  space-before-brace: 2
+  extends-before-mixins: 2
+  extends-before-declarations: 2
+  shorthand-values:
+  - 1
+  placeholder-in-extend: 2
+  trailing-semicolon: 2
+  nesting-depth:
+    - 2
+    -
+      max-depth: 3
+  no-color-keywords: 2
+  mixins-before-declarations:
+    - 2
+    -
+      exclude:
+        - breakpoint
+        - mq
+  variable-for-property:
+    - 2
+    -     
+      properties:
+        - color
+        - background
+
+  no-warn: 1
+  no-debug: 1
+  no-ids: 2
+  no-important: 2
+  hex-notation:
+    - 2
+    -
+      style: uppercase
+
+  property-sort-order:
+    - 1
+    -
+      order:
+        - position
+        - top
+        - right
+        - bottom
+        - left
+        - display
+        - width
+        - height
+        - margin
+        - padding
+      ignore-custom-properties: true

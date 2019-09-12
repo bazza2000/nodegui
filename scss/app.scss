@@ -1,0 +1,31 @@
+// Main SCSS fie No direct CSS to be put in here only @imports //
+
+// BASE
+@import 'base/variables';
+@import 'base/general';
+@import 'base/headings';
+@import 'base/fonts';
+@import 'base/borders';
+@import 'base/helpers';
+
+// COMPONENTS
+@import 'components/loader';
+@import 'components/form';
+@import 'components/errors';
+@import 'components/success';
+@import 'components/buttons';
+@import 'components/header';
+@import 'components/title-block';
+@import 'components/footer';
+@import 'components/icon-with-text';
+@import 'components/preOneTimePassword';
+@import 'components/oneTimePassword';
+@import 'components/line-text';
+@import 'components/sendCodeSelection';
+@import 'components/verifyCode';
+@import 'components/popup';
+@import 'components/pushNotificationFailed';
+@import 'components/error-box';
+@import 'components/changeVerification';
+@import 'components/forgotCredentials';
+@import 'components/help-icon-popup';

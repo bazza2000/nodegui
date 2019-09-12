@@ -1,0 +1,8 @@
+//borders
+%border--default {
+	border: $border-width__default solid $primary-content-color;
+}
+
+%border--error {
+	border: $border-width__default solid $primary-red;
+}

@@ -1,0 +1,34 @@
+// sass-lint:disable single-line-per-selector, indentation, property-sort-order, empty-line-between-blocks
+
+@font-face {
+    font-family: 'brand';
+    src: url('./fonts/texgyreheros-regular-webfont.eot');
+    src: url('./fonts/texgyreheros-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/texgyreheros-regular-webfont.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'brand-light';
+    src: url('./fonts/texgyreheroscn-regular-webfont.eot');
+    src: url('./fonts/texgyreheroscn-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/texgyreheroscn-regular-webfont.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'brand-bold';
+    src: url('./fonts/texgyreheros-bold-webfont.eot');
+    src: url('./fonts/texgyreheros-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/texgyreheros-bold-webfont.woff') format('woff');
+  }
+
+  %font-brand--regular {
+    font-family: 'brand', sans-serif;
+  }
+
+  %font-brand--light {
+    font-family: 'brand-light', sans-serif;
+  }
+
+  %font-brand--bold {
+    font-family: 'brand-bold', sans-serif;
+  }

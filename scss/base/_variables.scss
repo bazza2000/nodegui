@@ -1,0 +1,46 @@
+$primary-black: #000 !default;
+$primary-white: #FFF !default;
+$primary-grey: #F5F5F5 !default;
+$primary-green: #367F14 !default;
+$primary-red: #CE3E00 !default;
+$primary-color: #002763 !default;
+$primary-background: #FFF !default;
+
+$secondary-grey: #333333 !default;
+$secondary-grey-opacity: rgba(51,51,51,0.5) !default;
+
+$tertiary-grey: #908E8E !default;
+
+$primary-content-color: #000 !default;
+$secondary-content-color: #F5F5F5 !default;
+
+$tertiary-blue: #0BB3DD !default;
+$quaternary-blue: #1B6EB3 !default;
+
+$link-color: #333333 !default;
+$active-link-color: #002763 !default;
+$active-input: #F2FAFC !default;
+$linear-gradient: linear-gradient(225deg, #0BB3DD 0%, #CCE9F5 100%);
+
+$primary-btn: #000 !default;
+$secondary-btn: #CE3E00 !default;
+
+$btn-box-shadow: rgba(#000, .1);
+
+$active-tab-background: #002763 !default;
+
+$font-size__default:21px;
+
+$border-radius__btn: 30px;
+$border-width__default: 2px;
+
+$border-btn--other:$link-color;
+$background-btn--other:$link-color;
+$text-btn--other:$primary-white;
+$active-tile-border-hover: 4px solid $active-tab-background;
+$btn-margin-forgot-links: 5px;
+
+$active-secondary-btn:$primary-content-color;
+$verification__tiles-padding: 2px 10px;
+$verification__tiles-hover-padding : 0 8px;
+$h1-mobile-font-size : 25px;

@@ -1,0 +1,8 @@
+.error {
+    color: $primary-red;
+    &.error-box {
+        @extend %border--error;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+}

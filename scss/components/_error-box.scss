@@ -1,0 +1,11 @@
+.error-box {
+    margin: 20px 0px;
+    padding: 15px;
+    color: $primary-red;
+    border: solid 2px $primary-red;
+    max-width: 390px;
+
+    p { 
+        color: $primary-red;
+    }
+}

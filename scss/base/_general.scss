@@ -1,0 +1,34 @@
+body {
+	@extend %font-brand--regular;
+	top: 0px;
+	left: 0px;
+	margin: 0px;	
+
+	.container {
+		padding-left: 0px;
+		padding-right: 0px;
+		margin-bottom: 7em;
+	}
+
+	.hr {
+		width: 100%;
+		margin: 30px 0px;
+		border-bottom: 1px solid $secondary-grey-opacity;
+	}
+
+	.body-holder {
+		width: 69%;
+
+		@media screen and (max-width: 576px) {
+			width: 100%;
+		}
+		
+		@media screen and (max-width: 1024px) {
+			width: 100%;
+		} 
+
+	}
+
+	@import 'helpers';
+
+}
