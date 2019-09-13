@@ -1,9 +1,9 @@
 pipeline {
-#  agent {
-#   node {
-#      label 'jenkins_build'
-#    }
-#  }
+//  agent {
+//   node {
+//     label 'jenkins_build'/
+//    }
+// }
 
 
   stages {
