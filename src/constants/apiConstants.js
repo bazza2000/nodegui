@@ -12,9 +12,14 @@ export const API_OPTIONS = {
     'Content-Type': 'application/json'
   }
 };
+let host = 'http://localhost:';
+let port = '8080';
 
+if (authnUrl != undefined){
+  host = authnUrl;
+  port = authnPort
+}
 
 export const API = {
-  LOGIN: authnUrl + authnPort + '/demo/login',
-
+  LOGIN: host + port + '/authn/login',
 };

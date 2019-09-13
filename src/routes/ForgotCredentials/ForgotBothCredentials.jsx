@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { actions } from './../../actions/indexActions';
 import TitleBlock from './../../components/TitleBlock';
 import IconWithText from './../../components/IconWithText';
-import SoftTokenVerification from './SoftTokenVerification';
 import nodeLogServer from '../../utils/nodeLogServer/nodeLogServer';
 
 

@@ -118,15 +118,15 @@ class Username extends React.Component {
       } else {
 
         authnGateway.login({
-          "userName": this.props.data.userName,
+          "username": this.props.data.userName,
           "password": this.props.data.password,
           "journeyId": this.props.data.challenge
         })
           .then(user => {
 
             // set errorMessage to profile
-            let profileData = user.data;
-            this.props.dispatch(actions.changeProfileData(profileData));
+            let profileData = user;
+            this.props.dispatch(actions.changeUserProfile(profileData));
 
             // check if locked
             if ( this.props.data.profile.status === "login.locked" || this.props.data.profile.status === "login.countdown" || this.props.data.profile.status === "login.fail" || this.props.data.profile.status === "login.lastAttempt" ) {

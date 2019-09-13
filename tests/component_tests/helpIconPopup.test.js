@@ -10,8 +10,8 @@ const context = {
     store
 }
 
-const helpIcon = require(`./../../img/${IMG_URL}/help.png`);
-const hoverHIcon = require(`./../../img/${IMG_URL}/help-h.png`);
+const helpIcon = require(`./../../img/help.png`);
+const hoverHIcon = require(`./../../img/help-h.png`);
 
 describe('HelpIconPopup component', () => {
 
@@ -21,7 +21,7 @@ describe('HelpIconPopup component', () => {
         showPopup: "false",
         popupContent: "<p>content</p>"
     }
-    
+
     // check component renders
     it('should render at least a div', () => {
         let shallowWrapper = shallow(<HelpIconPopup {...props} />);
@@ -36,7 +36,7 @@ describe('HelpIconPopup component', () => {
         expect(mounted.props()).toEqual(props);
     });
 
-    /* 
+    /*
     * State
     */
     it('should have correct default state', () => {

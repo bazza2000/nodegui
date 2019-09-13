@@ -4,7 +4,6 @@ import Adapter from 'enzyme-adapter-react-16';
 import { mount, configure, shallow } from "enzyme";
 import Header from "../../src/components/Header";
 import { store } from '../../src/store/store';
-import { links } from '../../src/constants/links';
 import { actions } from '../../src/actions/indexActions';
 import { ROUTE_PATH_NAME } from '../../src/constants/routeConstants';
 
@@ -22,14 +21,7 @@ describe('Header component', () => {
     expect(shallowWrapper.exists('div')).toEqual(true);
   });
 
-  /*
-   * Props
-   */
-  it('should render Back btn with correct link', () => {
-    let shallowWrapper = shallow(<Header />, {context}).dive({context});
-    let questionMark = shallowWrapper.find("a").at(1);
-    expect(questionMark.props().href).toContain(links.username+"?login_challenge=");
-  });
+
 
   it('should render Back btn with tabIndex="0"', () => {
     let shallowWrapper = shallow(<Header />, {context}).dive({context});

@@ -6,9 +6,11 @@
  * - Actions can be called through actions.METHOD() etc.
  */
 
-import { changeUsername } from './changeUsername';
+import { changeUsername, changeUserProfile, changeCurrentLocation  } from './changeProfile';
 
 
 export const actions = {
-  changeUsername
+  changeUsername: changeUsername,
+  changeUserProfile : changeUserProfile,
+  changeCurrentLocation : changeCurrentLocation
 };

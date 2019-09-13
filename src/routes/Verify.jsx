@@ -321,7 +321,7 @@ class Verify extends React.Component {
     return (
       <div>
 
-        <TitleBlock title={this.state.pageTitle} img={Fscs} />
+        <TitleBlock title={this.state.pageTitle} />
 
         <div className="align">
           <button id="btnLoginWithTheApp" className="button__submit-btn--next got-the-app__btn m-b-20" onClick={this._softTokenLogin} type="button">Log in with the app</button>

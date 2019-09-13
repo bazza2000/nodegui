@@ -52,7 +52,7 @@ export const post = (endpoint, body) => {
           console.error('An error occurred while making a HTTP request: ', body);
           return Promise.reject(new Error(body.error.message))
         })
-      } else if(res.data.data) {
+      } else if(res.data) {
         return res.data;
       } else {
         throw error;

@@ -3,7 +3,6 @@ import Adapter from 'enzyme-adapter-react-16';
 import { mount, configure, shallow } from "enzyme";
 import Username from "../../src/routes/Username";
 import { store } from '../../src/store/store';
-import { changeUsername } from "../../src/actions/changeUsername";
 import { actions } from '../../src/actions/indexActions';
 
 configure({adapter: new Adapter()});
@@ -19,16 +18,16 @@ if ('should render at least a div', () => {
  * - NO props to test on this component.
  */
 
-/* 
+/*
  * State
  * - Test default state objects.
- */ 
+ */
 it('usernameError on initial state should equal "false"', () => {
-  
+
   const context = {
     store
   }
-  
+
   let shallowWrapper = shallow(<Username />, {context}).dive({context});
 
   expect(shallowWrapper.state().usernameError).toEqual(false || null);
@@ -36,11 +35,11 @@ it('usernameError on initial state should equal "false"', () => {
 });
 
 it('rememberUsername on initial state should equal "false"', () => {
-  
+
   const context = {
     store
   }
-  
+
   let shallowWrapper = shallow(<Username />, {context}).dive({context});
 
   expect(shallowWrapper.state().rememberUsername).toEqual(false);
@@ -48,11 +47,11 @@ it('rememberUsername on initial state should equal "false"', () => {
 });
 
 it('currentlySending on initial state should equal "false"', () => {
-  
+
   const context = {
     store
   }
-  
+
   let shallowWrapper = shallow(<Username />, {context}).dive({context});
 
   expect(shallowWrapper.state().currentlySending).toEqual(false);
@@ -64,7 +63,7 @@ it('currentlySending on initial state should equal "false"', () => {
  */
 
 it('should show usernameError in state as empty username is entered', () => {
-  
+
   const context = {
     store
   }
@@ -76,11 +75,11 @@ it('should show usernameError in state as empty username is entered', () => {
   console.log(shallowWrapper.props());
 
   expect(shallowWrapper.state().usernameError).toEqual("Please enter a valid username");
-    
+
 });
 
 it('should username input to have redux value of the testValue', () => {
-  
+
   const context = {
     store
   }
@@ -92,5 +91,5 @@ it('should username input to have redux value of the testValue', () => {
   let usernameInputValue = shallowWrapper.find("#username").props().value
 
   expect(usernameInputValue).toEqual("HarryJacks77");
-    
+
 });
