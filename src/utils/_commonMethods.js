@@ -36,9 +36,9 @@ export const _utagDataByPage = location => {
     utagData.page_name = ROUTE_PATH_NAME.ENTERUSERNAME.substr(1);
     utagData.page_title = 'Log in';
     break;
-  
-  case ROUTE_PATH_NAME.ENTERSECURITYDETAILS:
-    utagData.page_name = ROUTE_PATH_NAME.ENTERSECURITYDETAILS.substr(1);
+
+  case ROUTE_PATH_NAME.PROFILEDETAILS:
+    utagData.page_name = ROUTE_PATH_NAME.PROFILEDETAILS.substr(1);
     utagData.page_title = 'Log in';
     break;
   case ROUTE_PATH_NAME.SECURITYVERIFICATIONCODEMETHOD:
@@ -53,7 +53,7 @@ export const _utagDataByPage = location => {
     utagData.page_name = ROUTE_PATH_NAME.SECURITYINFORMATION.substr(1);
     utagData.page_title = 'How you verify yourself has changed';
     break;
-  
+
   case ROUTE_PATH_NAME.DECLINEDNOTIFICATION:
     utagData.page_name = ROUTE_PATH_NAME.DECLINEDNOTIFICATION.substr(1);
     utagData.page_title = 'You declined verification';
@@ -70,7 +70,7 @@ export const _utagDataByPage = location => {
     utagData.page_name = ROUTE_PATH_NAME.WEHAVESENTYOUANOTIFICATION.substr(1);
     utagData.page_title = "Verify it's you";
     break;
-  
+
   case ROUTE_PATH_NAME.CHANGEVERIFICATIONMETHOD:
     utagData.page_name = ROUTE_PATH_NAME.CHANGEVERIFICATIONMETHOD.substr(1);
     utagData.page_title = "Verify it's you";
@@ -87,7 +87,7 @@ export const _utagDataByPage = location => {
     utagData.page_name = ROUTE_PATH_NAME.FORGOTTENBOTHSECURITYDETAILS.substr(1);
     utagData.page_title = "We need to verify it's you";
     break;
-  
+
   case ROUTE_PATH_NAME.FORGOTPASSWORD:
     utagData.page_name = ROUTE_PATH_NAME.FORGOTPASSWORD.substr(1);
     utagData.page_title = 'Forgotten password';
@@ -104,7 +104,7 @@ export const _utagDataByPage = location => {
     utagData.page_name = ROUTE_PATH_NAME.RESETSECURITYCODE.substr(1);
     utagData.page_title = 'Reset security code';
     break;
-    
+
   case ROUTE_PATH_NAME.SOFTTOKENSUCCESSFUL:
     utagData.page_name = ROUTE_PATH_NAME.SOFTTOKENSUCCESSFUL.substr(1);
     utagData.page_title = 'Login Successfully';
@@ -123,7 +123,7 @@ export const _utagDataByPage = location => {
     utagData.page_name = ROUTE_PATH_NAME.CHANGEDEFAULTPREFERENCE.substr(1);
     utagData.page_title = 'Change how you verify yourself';
     break;
-  
+
   case ROUTE_PATH_NAME.MANAGEYOURDEVICE:
     utagData.page_name = ROUTE_PATH_NAME.MANAGEYOURDEVICE.substr(1);
     utagData.page_title = 'Your devices';
@@ -140,7 +140,7 @@ export const _utagDataByPage = location => {
     utagData.page_name = ROUTE_PATH_NAME.FORGOTUSERNAMESUCCESS.substr(1);
     utagData.page_title = 'Username reminder sent';
     break;
-  
+
   case ROUTE_PATH_NAME.ONETIMEPASSWORD:
     utagData.page_name = ROUTE_PATH_NAME.ONETIMEPASSWORD.substr(1);
     utagData.page_title = 'Enter the one-time password we emailed you';
@@ -149,7 +149,7 @@ export const _utagDataByPage = location => {
     utagData.page_name = ROUTE_PATH_NAME.ONETIMEPASSWORDEXPIRE.substr(1);
     utagData.page_title = 'Your one-time password has expired';
     break;
-  
+
   default:
   }
   return utagData;

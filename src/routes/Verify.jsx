@@ -97,28 +97,27 @@ class Verify extends React.Component {
                   {this.state.passwordError ? <p className="error">{this.state.passwordError}</p> : null}
                 </div>
               </div>
-              <p className="m-b-20">Enter these digits from your online banking security code.</p>
+
               <div className="form__field-wrapper">
 
                 <Row>
                   <Col xs={5} sm={3}>
-                    <label className="form__field-label m-b-5" htmlFor="pin1">{_generatePinLabel(this.props.data.profile.pinPos1)}</label>
+                    <label className="form__field-label m-b-5" htmlFor="firstName">Name</label>
                     <Dropdown
-                      className={"form__field-input form__field-input--pin" + (this.state.pinPos1Error ? ' form__field-input--error' : '')}
-                      id="pin1"
+                      className={"form__field-input m-b-10" + (this.state.pinPos1Error ? ' form__field-input--error' : '')}
+                      id="firstName"
                       onChange={e => this._changePinValue(e,'pinVal1')}
                       type="text"
                       placeholder=""
-                      value={this.state.pinVal1}
+                      value={this.props.data.profile.firstName}
                       options={pinValuesArr}
                     />
-                    {this.state.pinPos1Error ? <p className="error">{this.state.pinPos1Error}</p> : null}
                   </Col>
 
                   <Col xs={5} sm={3}>
-                    <label className="form__field-label m-b-5" htmlFor="pin2">{_generatePinLabel(this.props.data.profile.pinPos2)}</label>
+                    <label className="form__field-label m-b-5" htmlFor="pin2">Surname</label>
                     <Dropdown
-                      className={"form__field-input form__field-input--pin" + (this.state.pinPos2Error ? ' form__field-input--error' : '')}
+                      className={"form__field-input m-b-10" + (this.state.pinPos2Error ? ' form__field-input--error' : '')}
                       id="pin2"
                       onChange={e => this._changePinValue(e,'pinVal2')}
                       type="text"

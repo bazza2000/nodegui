@@ -76,7 +76,7 @@ describe('Header component', () => {
         childContextTypes: {
           ROUTE_PATH_NAME: PropTypes.object,
           ENTERUSERNAME : PropTypes.string,
-          ENTERSECURITYDETAILS : PropTypes.string,
+          PROFILEDETAILS : PropTypes.string,
           SECURITYVERIFICATIONCODEMETHOD : PropTypes.string,
           VERIFYCODE : PropTypes.string,
           SECURITYINFORMATION : PropTypes.string,

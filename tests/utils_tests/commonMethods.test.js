@@ -20,9 +20,9 @@ it('should return "UTAGDATA ENTERUSERNAME"', () => {
     let utagData = {page_name:ROUTE_PATH_NAME.ENTERUSERNAME.substr(1), page_title:'Log in'};
     expect(_commonMethods._utagDataByPage(ROUTE_PATH_NAME.ENTERUSERNAME)).toEqual(utagData);
 });
-it('should return "UTAGDATA ENTERSECURITYDETAILS"', () => {
-    let utagData = {page_name:ROUTE_PATH_NAME.ENTERSECURITYDETAILS.substr(1), page_title:'Log in'};
-    expect(_commonMethods._utagDataByPage(ROUTE_PATH_NAME.ENTERSECURITYDETAILS)).toEqual(utagData);
+it('should return "UTAGDATA PROFILEDETAILS"', () => {
+    let utagData = {page_name:ROUTE_PATH_NAME.PROFILEDETAILS.substr(1), page_title:'Log in'};
+    expect(_commonMethods._utagDataByPage(ROUTE_PATH_NAME.PROFILEDETAILS)).toEqual(utagData);
 });
 it('should return "UTAGDATA SECURITYVERIFICATIONCODEMETHOD"', () => {
     let utagData = {page_name:ROUTE_PATH_NAME.SECURITYVERIFICATIONCODEMETHOD.substr(1), page_title:"Verify it's you"};

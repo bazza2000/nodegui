@@ -108,7 +108,7 @@ class Header extends React.Component {
 Header.contextTypes = {
   ROUTE_PATH_NAME: PropTypes.object,
   ENTERUSERNAME: PropTypes.string,
-  ENTERSECURITYDETAILS : PropTypes.string,
+  PROFILEDETAILS : PropTypes.string,
 };
 
 export default connect(mapStateToProps)(Header);
