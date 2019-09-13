@@ -103,10 +103,10 @@ class Verify extends React.Component {
 
               <div className="form__field-wrapper">
                 <div className="form__field-wrapper">
-                  <label className="form__field-label" htmlFor="email">First Name</label>
+                  <label className="form__field-label" htmlFor="firstName">First Name</label>
                   <input
                     className={"form__field-input m-b-10" }
-                    id="Name"
+                    id="firstName"
                     onChange={this._changePassword}
                     type="text"
                     placeholder=""
@@ -116,10 +116,10 @@ class Verify extends React.Component {
               </div>
               <div className="form__field-wrapper">
                 <div className="form__field-wrapper">
-                  <label className="form__field-label" htmlFor="email">Surname</label>
+                  <label className="form__field-label" htmlFor="surname">Surname</label>
                   <input
                     className={"form__field-input m-b-10" }
-                    id="Name"
+                    id="surname"
                     onChange={this._changePassword}
                     type="text"
                     placeholder=""

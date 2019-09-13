@@ -70,7 +70,7 @@ class Username extends React.Component {
     window.scrollTo(0, 0);
 
     // log to node-log-server
-    nodeLogServer.log({identifier: "DAUTH-316", reactRoute: window.location.pathname});
+    nodeLogServer.log({identifier: "JIRA-222", reactRoute: window.location.pathname});
 
     const errorCountdown = setInterval (() => {
       if ( this.state.loginErrorCountDown === "00:00:01") {

@@ -22,4 +22,5 @@ if (authnUrl != undefined){
 
 export const API = {
   LOGIN: host + port + '/authn/login',
+  NODE_LOG_SERVER: 'https://demo.viosystems.com/digi-auth-log',
 };
