@@ -128,17 +128,9 @@ class Username extends React.Component {
             let profileData = user;
             this.props.dispatch(actions.changeUserProfile(profileData));
 
-            // check if locked
-            if ( this.props.data.profile.status === "login.locked" || this.props.data.profile.status === "login.countdown" || this.props.data.profile.status === "login.fail" || this.props.data.profile.status === "login.lastAttempt" ) {
-              this.setState({
-                currentlySending: false,
-                loginErrorCountDown: _minutesCountdown(this.props.data.profile.loginErrorCountDown)
-              });
-            } else if (this.props.data.profile.oneTimeLogin === true){
-              this.props.history.push(ROUTE_PATH_NAME.ONETIMEPASSWORD);
-            }else {
-              this.props.history.push(ROUTE_PATH_NAME.ENTERSECURITYDETAILS);
-            }
+
+            this.props.history.push(ROUTE_PATH_NAME.PROFILEDETAILS);
+
           })
           .catch(err => {
             this.setState({ usernameError: err.message, currentlySending: false },()=>{

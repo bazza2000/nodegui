@@ -8,7 +8,7 @@
 
 export const ROUTE_PATH_NAME = {
   ENTERUSERNAME : '/EnterUsername',
-  ENTERSECURITYDETAILS : '/EnterSecurityDetails',
+  PROFILEDETAILS : '/ProfileDetails',
   SECURITYVERIFICATIONCODEMETHOD : '/SecurityVerificationCodeMethod',
   VERIFYCODE : '/VerifyCode',
   SECURITYINFORMATION : '/SecurityInformation',

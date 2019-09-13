@@ -19,18 +19,8 @@ import { ROUTE_PATH_NAME } from './constants/routeConstants';
 import App from './routes/App';
 import Username from './routes/Username';
 import Verify from './routes/Verify';
-import NewSecurityDetailsCreated from './routes/ForgotCredentials/NewSecurityDetailsCreated';
-import ForgotCredentials from './routes/ForgotCredentials/ForgotCredentials';
 import ForgotBothCredentials from './routes/ForgotCredentials/ForgotBothCredentials';
-import ForgotPassword from './routes/ForgotCredentials/ForgotPassword';
-import ForgotSecurityCode from './routes/ForgotCredentials/ForgotSecurityCode';
-import ResetPassword from './routes/ForgotCredentials/ResetPassword';
-import ResetSecurityCode from './routes/ForgotCredentials/ResetSecurityCode';
-import ResetBothSecurityDetails from './routes/ForgotCredentials/ResetBothSecurityDetails';
-import ManageYourDevice from './routes/ManageMyDevice/ManageYourDevice';
-import ForgotUsername from './routes/ForgotCredentials/ForgotUsername';
 import ErrorHandling from './components/ErrorHandling';
-import ForgotUsernameSuccess from './routes/ForgotCredentials/ForgotUsernameSuccess';
 
 
 
@@ -87,19 +77,9 @@ class Main extends Component {
                   <Switch>
                     <Route path="/" exact component={App} />
                     <Route path = {ROUTE_PATH_NAME.ENTERUSERNAME} exact component={Username} />
-                    <Route path = {ROUTE_PATH_NAME.ENTERSECURITYDETAILS} exact component={Verify} />
-                    <Route path = {ROUTE_PATH_NAME.NEWSECURITYDETAILSCREATED} component={NewSecurityDetailsCreated} />
-                    <Route path = {ROUTE_PATH_NAME.WHICHDETAILSDOYOUNEEDTORESET} exact component={ForgotCredentials} />
+                    <Route path = {ROUTE_PATH_NAME.PROFILEDETAILS} exact component={Verify} />
                     <Route path = {ROUTE_PATH_NAME.FORGOTTENBOTHSECURITYDETAILS} component={ForgotBothCredentials} />
-                    <Route path = {ROUTE_PATH_NAME.FORGOTPASSWORD} component={ForgotPassword} />
-                    <Route path = {ROUTE_PATH_NAME.FORGOTSECURITYCODE} component={ForgotSecurityCode} />
-                    <Route path = {ROUTE_PATH_NAME.RESETPASSWORD} component={ResetPassword} />
-                    <Route path = {ROUTE_PATH_NAME.RESETSECURITYCODE} component={ResetSecurityCode} />
-                    <Route path = {ROUTE_PATH_NAME.RESETBOTHSECURITYDETAILS} component={ResetBothSecurityDetails} />
-                    <Route path = {ROUTE_PATH_NAME.MANAGEYOURDEVICE} component={ManageYourDevice} />
-                    <Route path = {ROUTE_PATH_NAME.FORGOTUSERNAME} component={ForgotUsername} />
                     <Route path = {ROUTE_PATH_NAME.ERRORPAGE} component={ErrorHandling} />
-                    <Route path = {ROUTE_PATH_NAME.FORGOTUSERNAMESUCCESS} component={ForgotUsernameSuccess} />
                   </Switch>
                 </div>
               </Container>

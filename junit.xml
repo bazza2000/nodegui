@@ -1,35 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="104" failures="0" time="9.058">
-  <testsuite name="Message popup component" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:30:08" time="2.154" tests="3">
-    <testcase classname="Message popup component Call function for success Popup" name="Message popup component Call function for success Popup" time="0.011">
+<testsuites name="jest tests" tests="104" failures="0" time="9.571">
+  <testsuite name="Message popup component" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:39:55" time="3.187" tests="3">
+    <testcase classname="Message popup component Call function for success Popup" name="Message popup component Call function for success Popup" time="0.01">
     </testcase>
-    <testcase classname="Message popup component Call function for error Popup" name="Message popup component Call function for error Popup" time="0.001">
+    <testcase classname="Message popup component Call function for error Popup" name="Message popup component Call function for error Popup" time="0.002">
     </testcase>
-    <testcase classname="Message popup component should call componentDidUpdate and update state" name="Message popup component should call componentDidUpdate and update state" time="0.137">
-    </testcase>
-  </testsuite>
-  <testsuite name="IconWithText" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:30:08" time="2.27" tests="1">
-    <testcase classname="IconWithText always renders a div" name="IconWithText always renders a div" time="0.041">
+    <testcase classname="Message popup component should call componentDidUpdate and update state" name="Message popup component should call componentDidUpdate and update state" time="0.073">
     </testcase>
   </testsuite>
-  <testsuite name="TitleBlock" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:30:08" time="2.273" tests="1">
-    <testcase classname="TitleBlock always renders a div" name="TitleBlock always renders a div" time="0.039">
-    </testcase>
-  </testsuite>
-  <testsuite name="CountdownReveal" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:30:08" time="2.322" tests="5">
-    <testcase classname="CountdownReveal always renders a div" name="CountdownReveal always renders a div" time="0.032">
+  <testsuite name="CountdownReveal" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:39:55" time="3.451" tests="5">
+    <testcase classname="CountdownReveal always renders a div" name="CountdownReveal always renders a div" time="0.034">
     </testcase>
     <testcase classname="CountdownReveal has the correct props" name="CountdownReveal has the correct props" time="0.003">
     </testcase>
-    <testcase classname="test componentDidMount should call componentDidMount and update state to equal 3 seconds and showZero: true" name="test componentDidMount should call componentDidMount and update state to equal 3 seconds and showZero: true" time="0.004">
+    <testcase classname="test componentDidMount should call componentDidMount and update state to equal 3 seconds and showZero: true" name="test componentDidMount should call componentDidMount and update state to equal 3 seconds and showZero: true" time="0.007">
     </testcase>
     <testcase classname="test componentDidMount should call componentDidMount and update state to equal 1 second and showHidden: true" name="test componentDidMount should call componentDidMount and update state to equal 1 second and showHidden: true" time="0.002">
     </testcase>
-    <testcase classname="test componentDidMount should call componentDidMount and update state to equal 10 seconds and showZero: true" name="test componentDidMount should call componentDidMount and update state to equal 10 seconds and showZero: true" time="0.002">
+    <testcase classname="test componentDidMount should call componentDidMount and update state to equal 10 seconds and showZero: true" name="test componentDidMount should call componentDidMount and update state to equal 10 seconds and showZero: true" time="0.003">
     </testcase>
   </testsuite>
-  <testsuite name="Header component" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:30:08" time="2.511" tests="14">
-    <testcase classname="Header component should render at least a div" name="Header component should render at least a div" time="0.013">
+  <testsuite name="Footer component" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:39:58" time="0.372" tests="1">
+    <testcase classname="Footer component should render at least a div" name="Footer component should render at least a div" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="IconWithText" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:39:55" time="3.656" tests="1">
+    <testcase classname="IconWithText always renders a div" name="IconWithText always renders a div" time="0.036">
+    </testcase>
+  </testsuite>
+  <testsuite name="TitleBlock" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:39:55" time="3.658" tests="1">
+    <testcase classname="TitleBlock always renders a div" name="TitleBlock always renders a div" time="0.033">
+    </testcase>
+  </testsuite>
+  <testsuite name="LoadingIndicator" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:39:58" time="0.127" tests="1">
+    <testcase classname="LoadingIndicator always renders a div" name="LoadingIndicator always renders a div" time="0.016">
+    </testcase>
+  </testsuite>
+  <testsuite name="Popup" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:39:58" time="0.246" tests="4">
+    <testcase classname="Popup always renders a div" name="Popup always renders a div" time="0.014">
+    </testcase>
+    <testcase classname="Popup has the correct props" name="Popup has the correct props" time="0.006">
+    </testcase>
+    <testcase classname="Popup checking esc function" name="Popup checking esc function" time="0.003">
+    </testcase>
+    <testcase classname="Popup without esc function" name="Popup without esc function" time="0.006">
+    </testcase>
+  </testsuite>
+  <testsuite name="Dropdown component" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:39:58" time="0.227" tests="2">
+    <testcase classname="Dropdown component should render at least a div" name="Dropdown component should render at least a div" time="0.004">
+    </testcase>
+    <testcase classname="Dropdown component should render correct props" name="Dropdown component should render correct props" time="0.014">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:39:55" time="3.96" tests="5">
+    <testcase classname=" usernameError on initial state should equal &quot;false&quot;" name=" usernameError on initial state should equal &quot;false&quot;" time="0.097">
+    </testcase>
+    <testcase classname=" rememberUsername on initial state should equal &quot;false&quot;" name=" rememberUsername on initial state should equal &quot;false&quot;" time="0.005">
+    </testcase>
+    <testcase classname=" currentlySending on initial state should equal &quot;false&quot;" name=" currentlySending on initial state should equal &quot;false&quot;" time="0.004">
+    </testcase>
+    <testcase classname=" should show usernameError in state as empty username is entered" name=" should show usernameError in state as empty username is entered" time="0.099">
+    </testcase>
+    <testcase classname=" should username input to have redux value of the testValue" name=" should username input to have redux value of the testValue" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="Error handling component" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:39:58" time="0.496" tests="1">
+    <testcase classname="Error handling component testing button tag for redirection" name="Error handling component testing button tag for redirection" time="0.041">
+    </testcase>
+  </testsuite>
+  <testsuite name="Header component" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:39:55" time="4.009" tests="14">
+    <testcase classname="Header component should render at least a div" name="Header component should render at least a div" time="0.011">
     </testcase>
     <testcase classname="Header component should render Back btn with tabIndex=&quot;0&quot;" name="Header component should render Back btn with tabIndex=&quot;0&quot;" time="0.002">
     </testcase>
@@ -37,189 +77,149 @@
     </testcase>
     <testcase classname="Header component should render question mark with tabIndex=&quot;0&quot;" name="Header component should render question mark with tabIndex=&quot;0&quot;" time="0.001">
     </testcase>
-    <testcase classname="Header component should update currentLocation in the store" name="Header component should update currentLocation in the store" time="0.003">
+    <testcase classname="Header component should update currentLocation in the store" name="Header component should update currentLocation in the store" time="0.002">
     </testcase>
-    <testcase classname="Header component should call mouseover on back icon (mounted)" name="Header component should call mouseover on back icon (mounted)" time="0.217">
+    <testcase classname="Header component should call mouseover on back icon (mounted)" name="Header component should call mouseover on back icon (mounted)" time="0.315">
     </testcase>
-    <testcase classname="Header component should call mouseover on back icon (shallow)" name="Header component should call mouseover on back icon (shallow)" time="0.002">
+    <testcase classname="Header component should call mouseover on back icon (shallow)" name="Header component should call mouseover on back icon (shallow)" time="0.001">
     </testcase>
     <testcase classname="Header component should call _back method on enter" name="Header component should call _back method on enter" time="0.001">
     </testcase>
-    <testcase classname="Header component should call _back method on click" name="Header component should call _back method on click" time="0">
+    <testcase classname="Header component should call _back method on click" name="Header component should call _back method on click" time="0.001">
     </testcase>
-    <testcase classname="Header component should call mouseout on back icon" name="Header component should call mouseout on back icon" time="0.007">
+    <testcase classname="Header component should call mouseout on back icon" name="Header component should call mouseout on back icon" time="0.002">
     </testcase>
     <testcase classname="Header component should call mouseover on Help icon" name="Header component should call mouseover on Help icon" time="0.001">
     </testcase>
-    <testcase classname="Header component should call mouseout on Help icon" name="Header component should call mouseout on Help icon" time="0.002">
+    <testcase classname="Header component should call mouseout on Help icon" name="Header component should call mouseout on Help icon" time="0.001">
     </testcase>
-    <testcase classname="Header component should call _open method on enter" name="Header component should call _open method on enter" time="0.019">
+    <testcase classname="Header component should call _open method on enter" name="Header component should call _open method on enter" time="0.037">
     </testcase>
     <testcase classname="Header component should call _open method on click" name="Header component should call _open method on click" time="0.001">
     </testcase>
   </testsuite>
-  <testsuite name="LoadingBtn" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:30:10" time="0.289" tests="1">
-    <testcase classname="LoadingBtn always renders a div" name="LoadingBtn always renders a div" time="0.08">
+  <testsuite name="ErrorBox component" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:39:58" time="0.217" tests="1">
+    <testcase classname="ErrorBox component should render at least a div" name="ErrorBox component should render at least a div" time="0.012">
     </testcase>
   </testsuite>
-  <testsuite name="Verify" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:30:08" time="2.737" tests="1">
-    <testcase classname="Verify always renders a div" name="Verify always renders a div" time="0.314">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:39:59" time="0.09" tests="1">
+    <testcase classname=" should return 11 as date is 11 days from today&quot;" name=" should return 11 as date is 11 days from today&quot;" time="0.012">
     </testcase>
   </testsuite>
-  <testsuite name="Popup" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:30:10" time="0.464" tests="4">
-    <testcase classname="Popup always renders a div" name="Popup always renders a div" time="0.034">
-    </testcase>
-    <testcase classname="Popup has the correct props" name="Popup has the correct props" time="0.006">
-    </testcase>
-    <testcase classname="Popup checking esc function" name="Popup checking esc function" time="0.031">
-    </testcase>
-    <testcase classname="Popup without esc function" name="Popup without esc function" time="0.012">
+  <testsuite name="LoadingBtn" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:39:58" time="0.267" tests="1">
+    <testcase classname="LoadingBtn always renders a div" name="LoadingBtn always renders a div" time="0.018">
     </testcase>
   </testsuite>
-  <testsuite name="HelpIconPopup component" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:30:11" time="0.245" tests="7">
-    <testcase classname="HelpIconPopup component should render at least a div" name="HelpIconPopup component should render at least a div" time="0.002">
+  <testsuite name="LineText" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:39:59" time="0.185" tests="1">
+    <testcase classname="LineText always renders a div" name="LineText always renders a div" time="0.01">
     </testcase>
-    <testcase classname="HelpIconPopup component should render correct props" name="HelpIconPopup component should render correct props" time="0.044">
+  </testsuite>
+  <testsuite name="HelpIconPopup component" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:39:58" time="0.27" tests="7">
+    <testcase classname="HelpIconPopup component should render at least a div" name="HelpIconPopup component should render at least a div" time="0.003">
     </testcase>
-    <testcase classname="HelpIconPopup component should have correct default state" name="HelpIconPopup component should have correct default state" time="0.002">
+    <testcase classname="HelpIconPopup component should render correct props" name="HelpIconPopup component should render correct props" time="0.015">
     </testcase>
-    <testcase classname="HelpIconPopup component should be able to mouseover on helpIcon" name="HelpIconPopup component should be able to mouseover on helpIcon" time="0.003">
+    <testcase classname="HelpIconPopup component should have correct default state" name="HelpIconPopup component should have correct default state" time="0.003">
     </testcase>
-    <testcase classname="HelpIconPopup component should be able to mouseout on helpIcon" name="HelpIconPopup component should be able to mouseout on helpIcon" time="0.008">
+    <testcase classname="HelpIconPopup component should be able to mouseover on helpIcon" name="HelpIconPopup component should be able to mouseover on helpIcon" time="0.002">
+    </testcase>
+    <testcase classname="HelpIconPopup component should be able to mouseout on helpIcon" name="HelpIconPopup component should be able to mouseout on helpIcon" time="0.003">
     </testcase>
     <testcase classname="HelpIconPopup component should open the popup on click" name="HelpIconPopup component should open the popup on click" time="0.003">
     </testcase>
-    <testcase classname="HelpIconPopup component shoul check closepopup function" name="HelpIconPopup component shoul check closepopup function" time="0">
+    <testcase classname="HelpIconPopup component shoul check closepopup function" name="HelpIconPopup component shoul check closepopup function" time="0.001">
     </testcase>
   </testsuite>
-  <testsuite name="Error handling component" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:30:10" time="0.51" tests="1">
-    <testcase classname="Error handling component testing button tag for redirection" name="Error handling component testing button tag for redirection" time="0.011">
+  <testsuite name="Hr component" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:39:59" time="0.214" tests="1">
+    <testcase classname="Hr component testing div tag for render" name="Hr component testing div tag for render" time="0.002">
     </testcase>
   </testsuite>
-  <testsuite name="Footer component" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:30:10" time="0.572" tests="1">
-    <testcase classname="Footer component should render at least a div" name="Footer component should render at least a div" time="0.002">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:39:59" time="0.066" tests="1">
+    <testcase classname=" should return &quot;t*******l@email.com&quot;" name=" should return &quot;t*******l@email.com&quot;" time="0">
     </testcase>
   </testsuite>
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:30:08" time="2.871" tests="5">
-    <testcase classname=" usernameError on initial state should equal &quot;false&quot;" name=" usernameError on initial state should equal &quot;false&quot;" time="0.316">
-    </testcase>
-    <testcase classname=" rememberUsername on initial state should equal &quot;false&quot;" name=" rememberUsername on initial state should equal &quot;false&quot;" time="0.006">
-    </testcase>
-    <testcase classname=" currentlySending on initial state should equal &quot;false&quot;" name=" currentlySending on initial state should equal &quot;false&quot;" time="0.004">
-    </testcase>
-    <testcase classname=" should show usernameError in state as empty username is entered" name=" should show usernameError in state as empty username is entered" time="0.036">
-    </testcase>
-    <testcase classname=" should username input to have redux value of the testValue" name=" should username input to have redux value of the testValue" time="0.005">
-    </testcase>
-  </testsuite>
-  <testsuite name="ErrorBox component" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:30:11" time="0.258" tests="1">
-    <testcase classname="ErrorBox component should render at least a div" name="ErrorBox component should render at least a div" time="0.003">
-    </testcase>
-  </testsuite>
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:30:11" time="0.11" tests="3">
-    <testcase classname=" should return the value &quot;Harry&quot; as only one query string param" name=" should return the value &quot;Harry&quot; as only one query string param" time="0.001">
-    </testcase>
-    <testcase classname=" should return the value &quot;Jacks&quot; as second query string param" name=" should return the value &quot;Jacks&quot; as second query string param" time="0">
-    </testcase>
-    <testcase classname=" should return the value &quot;123&quot; as third query string param" name=" should return the value &quot;123&quot; as third query string param" time="0">
-    </testcase>
-  </testsuite>
-  <testsuite name="LineText" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:30:11" time="0.225" tests="1">
-    <testcase classname="LineText always renders a div" name="LineText always renders a div" time="0.076">
-    </testcase>
-  </testsuite>
-  <testsuite name="Hr component" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:30:11" time="0.229" tests="1">
-    <testcase classname="Hr component testing div tag for render" name="Hr component testing div tag for render" time="0.006">
-    </testcase>
-  </testsuite>
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:30:11" time="0.145" tests="1">
-    <testcase classname=" should return &quot;t*******l@email.com&quot;" name=" should return &quot;t*******l@email.com&quot;" time="0.001">
-    </testcase>
-  </testsuite>
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:30:11" time="0.162" tests="1">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:39:59" time="0.085" tests="1">
     <testcase classname=" should return &quot;*******5678&quot;" name=" should return &quot;*******5678&quot;" time="0.001">
     </testcase>
   </testsuite>
-  <testsuite name="Dropdown component" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:30:11" time="0.315" tests="2">
-    <testcase classname="Dropdown component should render at least a div" name="Dropdown component should render at least a div" time="0.004">
-    </testcase>
-    <testcase classname="Dropdown component should render correct props" name="Dropdown component should render correct props" time="0.028">
-    </testcase>
-  </testsuite>
-  <testsuite name="LoadingIndicator" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:30:11" time="0.356" tests="1">
-    <testcase classname="LoadingIndicator always renders a div" name="LoadingIndicator always renders a div" time="0.013">
-    </testcase>
-  </testsuite>
-  <testsuite name="App" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:30:11" time="0.115" tests="1">
-    <testcase classname="App should be able to run tests" name="App should be able to run tests" time="0.001">
-    </testcase>
-  </testsuite>
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:30:11" time="0.09" tests="8">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:39:59" time="0.037" tests="8">
     <testcase classname=" should return &quot;false&quot; as we pass it a value and it is required." name=" should return &quot;false&quot; as we pass it a value and it is required." time="0.001">
     </testcase>
     <testcase classname=" should return &quot;true&quot; as we pass it an empty value and it is required." name=" should return &quot;true&quot; as we pass it an empty value and it is required." time="0">
     </testcase>
-    <testcase classname=" should return &quot;true&quot; as we pass it a non-accepted character (¬) in the value." name=" should return &quot;true&quot; as we pass it a non-accepted character (¬) in the value." time="0.001">
+    <testcase classname=" should return &quot;true&quot; as we pass it a non-accepted character (¬) in the value." name=" should return &quot;true&quot; as we pass it a non-accepted character (¬) in the value." time="0">
     </testcase>
     <testcase classname=" should return &quot;false&quot; as we pass it a only accepted characters in the value." name=" should return &quot;false&quot; as we pass it a only accepted characters in the value." time="0">
     </testcase>
-    <testcase classname=" should return &quot;true&quot; as we pass it a value thats length is less than the max." name=" should return &quot;true&quot; as we pass it a value thats length is less than the max." time="0">
+    <testcase classname=" should return &quot;true&quot; as we pass it a value thats length is less than the max." name=" should return &quot;true&quot; as we pass it a value thats length is less than the max." time="0.001">
     </testcase>
     <testcase classname=" should return &quot;false&quot; as we pass it a value thats length is greater or equal to the max." name=" should return &quot;false&quot; as we pass it a value thats length is greater or equal to the max." time="0">
     </testcase>
     <testcase classname=" should return &quot;true&quot; as we pass it a non number." name=" should return &quot;true&quot; as we pass it a non number." time="0">
     </testcase>
-    <testcase classname=" should return &quot;false&quot; as we pass it a number." name=" should return &quot;false&quot; as we pass it a number." time="0.001">
+    <testcase classname=" should return &quot;false&quot; as we pass it a number." name=" should return &quot;false&quot; as we pass it a number." time="0">
     </testcase>
   </testsuite>
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:30:11" time="0.085" tests="6">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:39:59" time="0.099" tests="2">
+    <testcase classname=" should return &quot;00:05:00&quot; after 1 second" name=" should return &quot;00:05:00&quot; after 1 second" time="0.018">
+    </testcase>
+    <testcase classname=" should return &quot;&quot; after 1 second" name=" should return &quot;&quot; after 1 second" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="App" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:39:59" time="0.093" tests="1">
+    <testcase classname="App should be able to run tests" name="App should be able to run tests" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:39:59" time="0.096" tests="3">
+    <testcase classname=" should return the value &quot;Harry&quot; as only one query string param" name=" should return the value &quot;Harry&quot; as only one query string param" time="0">
+    </testcase>
+    <testcase classname=" should return the value &quot;Jacks&quot; as second query string param" name=" should return the value &quot;Jacks&quot; as second query string param" time="0.001">
+    </testcase>
+    <testcase classname=" should return the value &quot;123&quot; as third query string param" name=" should return the value &quot;123&quot; as third query string param" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="Verify" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:39:55" time="4.294" tests="1">
+    <testcase classname="Verify always renders a div" name="Verify always renders a div" time="0.252">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:39:59" time="0.105" tests="6">
     <testcase classname=" should return &quot;1st digit&quot;" name=" should return &quot;1st digit&quot;" time="0.001">
     </testcase>
     <testcase classname=" should return &quot;2nd digit&quot;" name=" should return &quot;2nd digit&quot;" time="0">
     </testcase>
     <testcase classname=" should return &quot;3rd digit&quot;" name=" should return &quot;3rd digit&quot;" time="0">
     </testcase>
-    <testcase classname=" should return &quot;4th digit&quot;" name=" should return &quot;4th digit&quot;" time="0.001">
+    <testcase classname=" should return &quot;4th digit&quot;" name=" should return &quot;4th digit&quot;" time="0">
     </testcase>
     <testcase classname=" should return &quot;5th digit&quot;" name=" should return &quot;5th digit&quot;" time="0">
     </testcase>
     <testcase classname=" should return &quot;6th digit&quot;" name=" should return &quot;6th digit&quot;" time="0">
     </testcase>
   </testsuite>
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:30:11" time="0.193" tests="1">
-    <testcase classname=" should return 11 as date is 11 days from today&quot;" name=" should return 11 as date is 11 days from today&quot;" time="0.021">
-    </testcase>
-  </testsuite>
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:30:11" time="0.116" tests="2">
-    <testcase classname=" should return &quot;00:05:00&quot; after 1 second" name=" should return &quot;00:05:00&quot; after 1 second" time="0.009">
-    </testcase>
-    <testcase classname=" should return &quot;&quot; after 1 second" name=" should return &quot;&quot; after 1 second" time="0">
-    </testcase>
-  </testsuite>
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:30:11" time="0.087" tests="31">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2019-09-13T09:39:59" time="0.134" tests="31">
     <testcase classname=" should return &quot;ResetPassword&quot;" name=" should return &quot;ResetPassword&quot;" time="0.001">
     </testcase>
     <testcase classname=" should return &quot;RESETSECURITYCODE&quot;" name=" should return &quot;RESETSECURITYCODE&quot;" time="0">
     </testcase>
     <testcase classname=" should return &quot;RESETBOTHSECURITYDETAILS&quot;" name=" should return &quot;RESETBOTHSECURITYDETAILS&quot;" time="0">
     </testcase>
-    <testcase classname=" should return &quot;SOFTTOKENSUCCESSFUL&quot;" name=" should return &quot;SOFTTOKENSUCCESSFUL&quot;" time="0">
+    <testcase classname=" should return &quot;SOFTTOKENSUCCESSFUL&quot;" name=" should return &quot;SOFTTOKENSUCCESSFUL&quot;" time="0.001">
     </testcase>
-    <testcase classname=" should return &quot;UTAGDATA ENTERUSERNAME&quot;" name=" should return &quot;UTAGDATA ENTERUSERNAME&quot;" time="0.001">
+    <testcase classname=" should return &quot;UTAGDATA ENTERUSERNAME&quot;" name=" should return &quot;UTAGDATA ENTERUSERNAME&quot;" time="0">
     </testcase>
-    <testcase classname=" should return &quot;UTAGDATA ENTERSECURITYDETAILS&quot;" name=" should return &quot;UTAGDATA ENTERSECURITYDETAILS&quot;" time="0">
+    <testcase classname=" should return &quot;UTAGDATA ENTERSECURITYDETAILS&quot;" name=" should return &quot;UTAGDATA ENTERSECURITYDETAILS&quot;" time="0.001">
     </testcase>
     <testcase classname=" should return &quot;UTAGDATA SECURITYVERIFICATIONCODEMETHOD&quot;" name=" should return &quot;UTAGDATA SECURITYVERIFICATIONCODEMETHOD&quot;" time="0">
     </testcase>
-    <testcase classname=" should return &quot;UTAGDATA VERIFYCODE&quot;" name=" should return &quot;UTAGDATA VERIFYCODE&quot;" time="0.001">
+    <testcase classname=" should return &quot;UTAGDATA VERIFYCODE&quot;" name=" should return &quot;UTAGDATA VERIFYCODE&quot;" time="0">
     </testcase>
     <testcase classname=" should return &quot;UTAGDATA SECURITYINFORMATION&quot;" name=" should return &quot;UTAGDATA SECURITYINFORMATION&quot;" time="0">
     </testcase>
     <testcase classname=" should return &quot;UTAGDATA DECLINEDNOTIFICATION&quot;" name=" should return &quot;UTAGDATA DECLINEDNOTIFICATION&quot;" time="0">
     </testcase>
-    <testcase classname=" should return &quot;UTAGDATA WECOULDNOTLOGYOUIN&quot;" name=" should return &quot;UTAGDATA WECOULDNOTLOGYOUIN&quot;" time="0">
+    <testcase classname=" should return &quot;UTAGDATA WECOULDNOTLOGYOUIN&quot;" name=" should return &quot;UTAGDATA WECOULDNOTLOGYOUIN&quot;" time="0.001">
     </testcase>
-    <testcase classname=" should return &quot;UTAGDATA SOFTTOKENVERIFICATIONCODEMETHOD&quot;" name=" should return &quot;UTAGDATA SOFTTOKENVERIFICATIONCODEMETHOD&quot;" time="0.001">
+    <testcase classname=" should return &quot;UTAGDATA SOFTTOKENVERIFICATIONCODEMETHOD&quot;" name=" should return &quot;UTAGDATA SOFTTOKENVERIFICATIONCODEMETHOD&quot;" time="0">
     </testcase>
     <testcase classname=" should return &quot;UTAGDATA WEHAVESENTYOUANOTIFICATION&quot;" name=" should return &quot;UTAGDATA WEHAVESENTYOUANOTIFICATION&quot;" time="0">
     </testcase>
@@ -227,9 +227,9 @@
     </testcase>
     <testcase classname=" should return &quot;UTAGDATA NEWSECURITYDETAILSCREATED&quot;" name=" should return &quot;UTAGDATA NEWSECURITYDETAILSCREATED&quot;" time="0">
     </testcase>
-    <testcase classname=" should return &quot;UTAGDATA WHICHDETAILSDOYOUNEEDTORESET&quot;" name=" should return &quot;UTAGDATA WHICHDETAILSDOYOUNEEDTORESET&quot;" time="0">
+    <testcase classname=" should return &quot;UTAGDATA WHICHDETAILSDOYOUNEEDTORESET&quot;" name=" should return &quot;UTAGDATA WHICHDETAILSDOYOUNEEDTORESET&quot;" time="0.001">
     </testcase>
-    <testcase classname=" should return &quot;UTAGDATA FORGOTTENBOTHSECURITYDETAILS&quot;" name=" should return &quot;UTAGDATA FORGOTTENBOTHSECURITYDETAILS&quot;" time="0.001">
+    <testcase classname=" should return &quot;UTAGDATA FORGOTTENBOTHSECURITYDETAILS&quot;" name=" should return &quot;UTAGDATA FORGOTTENBOTHSECURITYDETAILS&quot;" time="0">
     </testcase>
     <testcase classname=" should return &quot;UTAGDATA FORGOTPASSWORD&quot;" name=" should return &quot;UTAGDATA FORGOTPASSWORD&quot;" time="0">
     </testcase>
@@ -237,27 +237,27 @@
     </testcase>
     <testcase classname=" should return &quot;UTAGDATA RESETPASSWORD&quot;" name=" should return &quot;UTAGDATA RESETPASSWORD&quot;" time="0">
     </testcase>
-    <testcase classname=" should return &quot;UTAGDATA RESETSECURITYCODE&quot;" name=" should return &quot;UTAGDATA RESETSECURITYCODE&quot;" time="0">
+    <testcase classname=" should return &quot;UTAGDATA RESETSECURITYCODE&quot;" name=" should return &quot;UTAGDATA RESETSECURITYCODE&quot;" time="0.001">
     </testcase>
-    <testcase classname=" should return &quot;UTAGDATA SOFTTOKENSUCCESSFUL&quot;" name=" should return &quot;UTAGDATA SOFTTOKENSUCCESSFUL&quot;" time="0.001">
+    <testcase classname=" should return &quot;UTAGDATA SOFTTOKENSUCCESSFUL&quot;" name=" should return &quot;UTAGDATA SOFTTOKENSUCCESSFUL&quot;" time="0">
     </testcase>
     <testcase classname=" should return &quot;UTAGDATA CONSENT&quot;" name=" should return &quot;UTAGDATA CONSENT&quot;" time="0">
     </testcase>
     <testcase classname=" should return &quot;UTAGDATA RESETBOTHSECURITYDETAILS&quot;" name=" should return &quot;UTAGDATA RESETBOTHSECURITYDETAILS&quot;" time="0">
     </testcase>
-    <testcase classname=" should return &quot;UTAGDATA CHANGEDEFAULTPREFERENCE&quot;" name=" should return &quot;UTAGDATA CHANGEDEFAULTPREFERENCE&quot;" time="0">
+    <testcase classname=" should return &quot;UTAGDATA CHANGEDEFAULTPREFERENCE&quot;" name=" should return &quot;UTAGDATA CHANGEDEFAULTPREFERENCE&quot;" time="0.001">
     </testcase>
     <testcase classname=" should return &quot;UTAGDATA MANAGEYOURDEVICE&quot;" name=" should return &quot;UTAGDATA MANAGEYOURDEVICE&quot;" time="0">
     </testcase>
-    <testcase classname=" should return &quot;UTAGDATA FORGOTUSERNAME&quot;" name=" should return &quot;UTAGDATA FORGOTUSERNAME&quot;" time="0.001">
+    <testcase classname=" should return &quot;UTAGDATA FORGOTUSERNAME&quot;" name=" should return &quot;UTAGDATA FORGOTUSERNAME&quot;" time="0">
     </testcase>
     <testcase classname=" should return &quot;UTAGDATA ERRORPAGE&quot;" name=" should return &quot;UTAGDATA ERRORPAGE&quot;" time="0">
     </testcase>
-    <testcase classname=" should return &quot;UTAGDATA FORGOTUSERNAMESUCCESS&quot;" name=" should return &quot;UTAGDATA FORGOTUSERNAMESUCCESS&quot;" time="0">
+    <testcase classname=" should return &quot;UTAGDATA FORGOTUSERNAMESUCCESS&quot;" name=" should return &quot;UTAGDATA FORGOTUSERNAMESUCCESS&quot;" time="0.001">
     </testcase>
-    <testcase classname=" should return &quot;UTAGDATA ONETIMEPASSWORD&quot;" name=" should return &quot;UTAGDATA ONETIMEPASSWORD&quot;" time="0">
+    <testcase classname=" should return &quot;UTAGDATA ONETIMEPASSWORD&quot;" name=" should return &quot;UTAGDATA ONETIMEPASSWORD&quot;" time="0.001">
     </testcase>
-    <testcase classname=" should return &quot;UTAGDATA ONETIMEPASSWORDEXPIRE&quot;" name=" should return &quot;UTAGDATA ONETIMEPASSWORDEXPIRE&quot;" time="0.001">
+    <testcase classname=" should return &quot;UTAGDATA ONETIMEPASSWORDEXPIRE&quot;" name=" should return &quot;UTAGDATA ONETIMEPASSWORDEXPIRE&quot;" time="0">
     </testcase>
   </testsuite>
 </testsuites>
