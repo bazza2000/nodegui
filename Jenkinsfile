@@ -1,9 +1,4 @@
 pipeline {
-//  agent {
-//   node {
-//     label 'jenkins_build'/
-//    }
-// }
 agent any
   stages {
     stage('React Test') {
