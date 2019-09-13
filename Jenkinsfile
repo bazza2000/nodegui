@@ -1,5 +1,28 @@
 pipeline {
-agent any
+  agent any
+  options {
+    timeout(time: 1, unit: 'HOURS')
+    disableConcurrentBuilds()
+    buildDiscarder(logRotator(daysToKeepStr: '30', numToKeepStr: '10', artifactDaysToKeepStr: '30', artifactNumToKeepStr: '10'))
+    timestamps()
+  }
+  triggers {
+    GenericTrigger(
+      genericVariables: [
+        [key: 'ref', value: '$.ref']
+      ],
+
+      causeString: 'Triggered on $ref',
+
+      token: 'nodegui',
+
+      printContributedVariables: true,
+
+      printPostContent: true,
+
+      silentResponse: false,
+    )
+  }
   stages {
     stage('React Test') {
       agent {
