@@ -46,19 +46,18 @@ class ErrorHandling extends React.Component {
     return (
       <div className="align">
         <h1>
-          We're sorry, something went wrong
+          Terribly ebarrassing this but that functionality is currently not working
         </h1>
         <LineText text="" />
         <p className="m-t-40 m-b-60">
           The page you're looking for is currently unavailable.
           <br/>
-          We apologise for this inconvenience. Please try to complete your 
-          account action again.
+          We apologise for this inconvenience.
         </p>
-        <button 
-          id="btnError" 
-          className="button__submit-btn--next  m-t-40" 
-          type="button" 
+        <button
+          id="btnError"
+          className="button__submit-btn--next  m-t-40"
+          type="button"
           onClick={()=> this._getRedirectionUrl()}
         >{this.props.location.state && this.props.location.state.isLoggedIn ? "Return to accounts homepage" : "Return to login" }</button>
       </div>

@@ -51,7 +51,7 @@ class Verify extends React.Component {
       error: null,
       pageTitle: "Log in"
     };
-
+    this._auth = this._auth.bind(this);
   }
 
   componentDidMount() {
@@ -69,7 +69,10 @@ class Verify extends React.Component {
 
   }
 
-
+  _auth(e)
+  {
+    this.props.history.push(ROUTE_PATH_NAME.ENTERUSERNAME);
+  }
 
   render() {
 
@@ -94,41 +97,35 @@ class Verify extends React.Component {
                     placeholder=""
                     value={this.props.data.profile.email}
                   />
-                  {this.state.passwordError ? <p className="error">{this.state.passwordError}</p> : null}
+
                 </div>
               </div>
 
               <div className="form__field-wrapper">
-
-                <Row>
-                  <Col xs={5} sm={3}>
-                    <label className="form__field-label m-b-5" htmlFor="firstName">Name</label>
-                    <Dropdown
-                      className={"form__field-input m-b-10" + (this.state.pinPos1Error ? ' form__field-input--error' : '')}
-                      id="firstName"
-                      onChange={e => this._changePinValue(e,'pinVal1')}
-                      type="text"
-                      placeholder=""
-                      value={this.props.data.profile.firstName}
-                      options={pinValuesArr}
-                    />
-                  </Col>
-
-                  <Col xs={5} sm={3}>
-                    <label className="form__field-label m-b-5" htmlFor="pin2">Surname</label>
-                    <Dropdown
-                      className={"form__field-input m-b-10" + (this.state.pinPos2Error ? ' form__field-input--error' : '')}
-                      id="pin2"
-                      onChange={e => this._changePinValue(e,'pinVal2')}
-                      type="text"
-                      placeholder=""
-                      value={this.state.pinVal2}
-                      options={pinValuesArr}
-                    />
-                    {this.state.pinPos2Error ? <p className="error">{this.state.pinPos2Error}</p> : null}
-                  </Col>
-                </Row>
-
+                <div className="form__field-wrapper">
+                  <label className="form__field-label" htmlFor="email">First Name</label>
+                  <input
+                    className={"form__field-input m-b-10" }
+                    id="Name"
+                    onChange={this._changePassword}
+                    type="text"
+                    placeholder=""
+                    value={this.props.data.profile.firstName}
+                  />
+                </div>
+              </div>
+              <div className="form__field-wrapper">
+                <div className="form__field-wrapper">
+                  <label className="form__field-label" htmlFor="email">Surname</label>
+                  <input
+                    className={"form__field-input m-b-10" }
+                    id="Name"
+                    onChange={this._changePassword}
+                    type="text"
+                    placeholder=""
+                    value={this.props.data.profile.surname}
+                  />
+                </div>
               </div>
               <div className="button__submit-btn-wrapper">
                 {this.state.currentlySending

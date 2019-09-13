@@ -13,7 +13,7 @@ class ForgotBothCredentials extends React.Component {
   componentDidMount() {
     window.scrollTo(0, 0);
     // log to node-log-server
-    nodeLogServer.log({ identifier: "DAUTH-622", reactRoute: window.location.pathname });
+    nodeLogServer.log({ identifier: "JIRA-132", reactRoute: window.location.pathname });
 
     this.props.dispatch(actions.changeCurrentLocation(window.location.pathname));
   }
@@ -21,18 +21,14 @@ class ForgotBothCredentials extends React.Component {
   render() {
     return (
       <div className="forgot-both-credentials">
-        <TitleBlock title="We need to verify it's you" />
+        <TitleBlock title="Self service coming soon..." />
         <p className="align">
-            If you don't know both your password
-            and security code you'll need to verify
-            your account using The Co-operative Bank
-            mobile app or by calling us.
+            In the meantime ff you don't know either of your username and password
+            please give us a call.
         </p>
 
-        <SoftTokenVerification history = {this.props.history} />
 
         <IconWithText
-          img={Contact}
           title="Contact us on"
           text={<a href="tel:+44 XXXXXXXX" target="_blank">+44 1234 4567</a>}
         />

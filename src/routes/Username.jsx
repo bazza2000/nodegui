@@ -266,7 +266,7 @@ class Username extends React.Component {
                 }
                 {this.state.generalError ? <p className="error">{this.state.generalError}</p> : null}
               </div>
-              <p className="text-center"><Link to={ROUTE_PATH_NAME.FORGOTUSERNAME}>Forgotten your login details?</Link></p>
+              <p className="text-center"><Link to={ROUTE_PATH_NAME.FORGOTTENBOTHSECURITYDETAILS}>Forgotten your login details?</Link></p>
             </form>
           </div>
         </div>
