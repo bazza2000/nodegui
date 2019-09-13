@@ -2,6 +2,10 @@ pipeline {
   agent {
     node {
       label 'jenkins_build'
+    }
+  }
+
+
   stages {
     stage('React Test') {
       agent {
@@ -24,7 +28,6 @@ pipeline {
         }
       }
     }
-  }
     stage('React Build') {
       parallel {
         stage('React Build/Push PIBS') {
@@ -37,7 +40,6 @@ pipeline {
       }
     }
   }
-}
   environment {
     GITHUB_ASH_CREDS  = credentials('jenkins-user-for-nexus-repository')
   }
