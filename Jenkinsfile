@@ -9,8 +9,6 @@ agent any
         }
       }
       steps {
-        // Send Job Start Notification to Slack Channel.
-        slackSend (color: '#FFFF00', message: "STARTED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
         sh 'npm set strict-ssl false'
         sh 'npm install'
         sh 'npm --max_old_space_size=8000 test'
