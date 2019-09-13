@@ -2,8 +2,7 @@ pipeline {
   agent {
     node {
       label 'jenkins_build'
-    }
-  }
+
    options {
     timeout(time: 1, unit: 'HOURS')
     disableConcurrentBuilds()
@@ -46,8 +45,8 @@ pipeline {
       }
     }
   }
+}
   environment {
     GITHUB_ASH_CREDS  = credentials('jenkins-user-for-nexus-repository')
   }
-}
 }
