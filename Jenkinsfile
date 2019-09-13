@@ -26,6 +26,8 @@ agent any
             sh 'docker build -t docker.viosystems.com:8443/nodegui:${BUILD_NUMBER} .'
             sh 'docker login  docker.viosystems.com:8443 -u ${GITHUB_ASH_CREDS_USR} -p ${GITHUB_ASH_CREDS_PSW}'
             sh 'docker push   docker.viosystems.com:8443/nodegui:${BUILD_NUMBER}'
+            sh 'docker tag   docker.viosystems.com:8443/nodegui:${BUILD_NUMBER} docker.viosystems.com:8443/nodegui:latest'
+            sh 'docker push   docker.viosystems.com:8443/nodegui:latest'
           }
         }
       }
