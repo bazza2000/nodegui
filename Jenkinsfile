@@ -2,14 +2,6 @@ pipeline {
   agent {
     node {
       label 'jenkins_build'
-
-   options {
-    timeout(time: 1, unit: 'HOURS')
-    disableConcurrentBuilds()
-    buildDiscarder(logRotator(daysToKeepStr: '30', numToKeepStr: '10', artifactDaysToKeepStr: '30', artifactNumToKeepStr: '10'))
-    timestamps()
-  }
-
   stages {
     stage('React Test') {
       agent {
