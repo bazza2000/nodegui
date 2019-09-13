@@ -4,8 +4,7 @@ pipeline {
 //     label 'jenkins_build'/
 //    }
 // }
-
-
+agent any
   stages {
     stage('React Test') {
       agent {
