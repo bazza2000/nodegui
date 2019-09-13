@@ -11,13 +11,13 @@ agent any
       steps {
         sh 'npm set strict-ssl false'
         sh 'npm install'
-     //   sh 'npm --max_old_space_size=8000 test'
+        sh 'npm --max_old_space_size=8000 test'
       }
-     // post {
-       // always {
-        //    junit 'junit.xml'
-        //}
-      //}
+      post {
+        always {
+            junit 'junit.xml'
+        }
+      }
     }
     stage('React Build') {
       parallel {
