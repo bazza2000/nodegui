@@ -50,4 +50,4 @@ pipeline {
     GITHUB_ASH_CREDS  = credentials('jenkins-user-for-nexus-repository')
   }
 }
-
+}
