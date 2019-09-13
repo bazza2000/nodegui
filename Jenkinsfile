@@ -5,7 +5,6 @@ agent any
       agent {
         docker {
           image 'node:8.11.1'
-          label 'jenkins_build'
           args '-v /var/run/docker.sock:/var/run/docker.sock'
         }
       }
