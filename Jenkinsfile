@@ -10,6 +10,7 @@ pipeline {
     buildDiscarder(logRotator(daysToKeepStr: '30', numToKeepStr: '10', artifactDaysToKeepStr: '30', artifactNumToKeepStr: '10'))
     timestamps()
   }
+
   stages {
     stage('React Test') {
       agent {
@@ -18,7 +19,20 @@ pipeline {
           label 'jenkins_build'
           args '-v /var/run/docker.sock:/var/run/docker.sock'
         }
+      }
+      steps {
+        // Send Job Start Notification to Slack Channel.
+        slackSend (color: '#FFFF00', message: "STARTED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
+        sh 'npm install'
+        sh 'npm --max_old_space_size=8000 test'
+      }
+      post {
+        always {
+            junit 'junit.xml'
+        }
+      }
     }
+  }
     stage('React Build') {
       parallel {
         stage('React Build/Push PIBS') {
@@ -35,3 +49,4 @@ pipeline {
     GITHUB_ASH_CREDS  = credentials('jenkins-user-for-nexus-repository')
   }
 }
+
