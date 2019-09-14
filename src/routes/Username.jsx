@@ -110,7 +110,7 @@ class Username extends React.Component {
       // validate
       if (validation.required(this.props.data.userName) ||
         validation.specialCharacters(this.props.data.userName) ||
-        validation.minChar(this.props.data.userName, 8)) {
+        validation.minChar(this.props.data.userName, 3)) {
         this.setState({
           currentlySending: false,
           usernameError: err.USERNAME_REQUIRED
