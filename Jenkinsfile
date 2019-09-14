@@ -59,4 +59,9 @@ pipeline {
   environment {
     GITHUB_ASH_CREDS  = credentials('jenkins-user-for-nexus-repository')
   }
+      post {
+    success {
+      build job: 'minikube_update'
+    }
+   }
 }
