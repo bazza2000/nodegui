@@ -1,6 +1,6 @@
 # Authentication Demo App
 
-Built in React JS
+Built in React JS1
 
 Install: `npm install`
 
