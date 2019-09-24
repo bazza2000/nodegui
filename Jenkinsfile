@@ -35,7 +35,7 @@ pipeline {
         sh 'npm set strict-ssl false'
         sh 'npm install'
         sh 'npm --max_old_space_size=8000 test'
-        sh 'npm build'
+        sh 'npm run build'
       }
       post {
         always {
