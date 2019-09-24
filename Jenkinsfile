@@ -27,7 +27,7 @@ pipeline {
     stage('React Test') {
       agent {
         docker {
-          image 'node:8.11.1'
+          image 'node:12.8.0'
           args '-v /var/run/docker.sock:/var/run/docker.sock'
         }
       }
