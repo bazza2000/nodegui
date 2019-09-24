@@ -4,7 +4,7 @@
   "description": "Application name",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.prod.js --history-api-fallback",
+    "build": "webpack --config webpack.dev.js --history-api-fallback",
     "start": "cross-env webpack-dev-server --hot --host 0.0.0.0 --port 3000 --authnUrl localhost --authnPort 8080 --config webpack.dev.js",
     "test": "jest"
   },
