@@ -13,7 +13,7 @@ class ForgotBothCredentials extends React.Component {
   componentDidMount() {
     window.scrollTo(0, 0);
     // log to node-log-server
-    nodeLogServer.log({ identifier: "JIRA-132", reactRoute: window.location.pathname });
+    nodeLogServer.log({ identifier: "VSD-34", reactRoute: window.location.pathname });
 
     this.props.dispatch(actions.changeCurrentLocation(window.location.pathname));
   }
