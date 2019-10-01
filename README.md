@@ -1,6 +1,6 @@
-# Authentication Demo App
+# Authentication UI VSD-18
 
-Built in React JS1
+Built in React JS
 
 Install: `npm install`
 
