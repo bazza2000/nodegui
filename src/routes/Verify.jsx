@@ -130,7 +130,7 @@ class Verify extends React.Component {
               <div className="button__submit-btn-wrapper">
                 {this.state.currentlySending
                   ? <LoadingBtn />
-                  : <button id="btnLoginWithCredentials" className="button__submit-btn--next" type="submit">Do Stuff</button>
+                  : <button id="btnLoginWithCredentials" className="button__submit-btn--next" type="submit">Do Stuf</button>
                 }
                 {this.state.error ? <p className="error">* {this.state.error}</p> : null}
               </div>
